@@ -1,3 +1,0 @@
-Scorurile procesate: [20, 10, 15, 5, 20, 25, 10]
-Scorul cautat: 15
-Pozitia in clasament: 3
