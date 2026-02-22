@@ -90,10 +90,49 @@
 //
 
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+
+
+
+//Challenge 4: Generice și Colectii Custom (Sortare & Comparator)
+//
+//
+//        Acesta este ultimul pas mare pentru a ajunge la acel "nivel satisfăcător" despre care vorbeai. Vom învăța cum să sortăm obiectele
+//        noastre.
+//
+//        Obiective Challenge 4:
+//
+//
+//        1. Implementează `Comparable`
+//        - Modifică clasa abstractă ElectronicDevice să implementeze interfața standard Java Comparable<ElectronicDevice>.
+//        - Implementează metoda compareTo(ElectronicDevice other).
+//        - Regulă de sortare: Dispozitivele să fie sortate în funcție de batteryLevel (de la cel mai descărcat la cel mai încărcat).
+//
+//
+//        2. Sortarea listei
+//        - În Main, după ce ai adăugat dispozitivele în listă, folosește Collections.sort(myDevices).
+//        - Afișează lista înainte și după sortare pentru a vedea diferența (va trebui să suprascrii metoda toString() în SmartTV și
+//        SmartConsole sau direct în ElectronicDevice pentru a vedea ceva frumos la consolă, ex: return "Dispozitiv cu baterie: " +
+//        batteryLevel;).
+//
+//
+//        3. Comparator Custom (Bonus/Alternative)
+//        - Creează o clasă separată DeviceNameComparator care implementează Comparator<String> (sau poți folosi o expresie Lambda dacă știi)
+//        pentru a sorta cheile din Map (numele dispozitivelor) în ordine invers alfabetică.
+//
+//
+//        4. Finalizare Logica `charge`
+//        - Completează metoda charge în ElectronicDevice astfel încât să crească batteryLevel dar să nu depășească 100.
+
+
+
+
+
+
+
+
+
+
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -115,6 +154,14 @@ public class Main {
                 }
             }
         }
+        try{smartTVOLED.pressButton();
+        smartTVOLED.pressButton();}catch (BatteryEmptyException be){
+            System.out.println(be.getMessage());
+        }
+
+        System.out.printf(mydevices.toString());
+        Collections.sort(mydevices);
+        System.out.println(mydevices.toString());
         System.out.println("----------");
         Map<String, ElectronicDevice> myMap=new HashMap<>();
         myMap.put("Living Room TV",smartTV);
@@ -132,6 +179,9 @@ public class Main {
 
             smartTV.showBattery();
         }
+        myMap.entrySet().stream().sorted(Map.Entry.comparingByKey(new DeviceNameComparator())).forEach(entry-> System.out.println(entry.getKey()+entry.getValue()));
+
+
 
 
     }
