@@ -46,11 +46,81 @@
 //        - În blocul catch, afișează mesajul excepției.
 //       - Adaugă un bloc `finally` care să afișeze "Sesiune de utilizare încheiată".
 
+//
+//Challenge 3: Colecții Custom și Mosterniri (List & Map)
+//
+//
+//Acum haide să transformăm Smart Home-ul într-un sistem
+// care gestionează mai multe dispozitive folosind Colecții.
+//
+//Obiective Challenge 3:
+//
+//
+//        1. Colecție de dispozitive (List)
+//   - În clasa Main, în loc de un singur SmartTV,
+//   creează o listă (List<ElectronicDevice>) numită myDevices.
+//        - Adaugă în listă cel puțin 3 obiecte:
+//        - Două instanțe de SmartTV.
+//        - O instanță de SmartConsole (va trebui să o creezi, să moștenească tot ElectronicDevice).
+//
+//
+//        2. Polimorfism în acțiune
+//   - Parcurge lista myDevices cu un for-each.
+//   - Pentru fiecare dispozitiv, apelează showBattery().
+//        - Provocare: Pentru dispozitivele care
+//        implementează RemoteControllable (folosește instanceof),
+//        apelează pressButton() (atenție la
+//     try-catch și casting).
+//
+//
+//        3. Evidența dispozitivelor (Map)
+//   - Creează un Map<String, ElectronicDevice> unde cheia
+//   (String) este un nume unic (ex: "LivingRoomTV", "BedroomTV", "ConsoleX") și
+//valoarea este obiectul respectiv.
+//        - Afișează toate cheile (numele dispozitivelor) folosind myMap.keySet().
+//
+//
+//        4. Interfață suplimentară: `Chargable`
+//        - Creează o interfață Chargable cu metoda void charge(int amount).
+//        - Fă clasa abstractă ElectronicDevice să implementeze
+//        Chargable. Implementează metoda charge în clasa abstractă
+//        (astfel încât toate
+//        dispozitivele să se poată încărca).
+//
+//
+
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello, World!");
+        List<ElectronicDevice> mydevices=new ArrayList<>();
+
         SmartTV smartTV=new SmartTV();
+        SmartTV smartTVOLED=new SmartTV();
+        SmartConsole smartConsole=new SmartConsole();
+
+        mydevices.add(smartTV);
+        mydevices.add(smartTVOLED);
+        mydevices.add(smartConsole);
+        for (ElectronicDevice dev :mydevices){
+            dev.showBattery();
+            if(dev instanceof RemoteControllable){
+                try{((RemoteControllable) dev).pressButton();}catch (BatteryEmptyException be){
+                    System.out.printf(be.getMessage());
+                }
+            }
+        }
+        System.out.println("----------");
+        Map<String, ElectronicDevice> myMap=new HashMap<>();
+        myMap.put("Living Room TV",smartTV);
+        myMap.put("Bedroom TV",smartTVOLED);
+        myMap.put("Console",smartConsole);
+        System.out.println(myMap.keySet());
         for(int i=0;i<50;i++){
             try{
                 smartTV.pressButton();
@@ -62,29 +132,6 @@ public class Main {
 
             smartTV.showBattery();
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     }
