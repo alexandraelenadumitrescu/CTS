@@ -3,8 +3,11 @@ public class SmartTV extends ElectronicDevice implements RemoteControllable{
     @Override
     public void pressButton() {
 
-            if(batteryLevel<=0){
-                System.out.printf("baterie descarcata");
+
+            if(batteryLevel<=0) {
+                //System.out.printf("baterie descarcata");
+                throw new BatteryEmptyException("baterie descarcata");
+
             }else{
                 isOn=!isOn;
                 if(isOn){

@@ -1,3 +1,3 @@
 public interface RemoteControllable {
-    void pressButton();
+    void pressButton() throws BatteryEmptyException;
 }
