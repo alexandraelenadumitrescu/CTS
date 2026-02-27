@@ -42,11 +42,17 @@ public class Lucrator implements Angajat{
 
         double salariuNet= 0;
         try {
-            salariuNet = salariuBrut- salariuBrut* Taxe.getProcent("cas")-salariuBrut*Taxe.getProcent("xass");
+            salariuNet = salariuBrut- salariuBrut* Taxe.getProcent("cas")-salariuBrut*Taxe.getProcent("cass");
             salariuNet=salariuNet*(1-Taxe.getProcent("impozit"));
         } catch (ExceptieNumeTaxa e) {
             throw new RuntimeException(e);
         }
         return salariuNet;
+    }
+
+    public Lucrator(String nume, int nrOreLucrate, double tarifOrar) {
+        this.nume = nume;
+        this.nrOreLucrate = nrOreLucrate;
+        this.tarifOrar = tarifOrar;
     }
 }

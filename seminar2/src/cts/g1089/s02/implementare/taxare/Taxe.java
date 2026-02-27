@@ -7,7 +7,7 @@ import java.util.Map;
 
 public class Taxe {
     static Map<String, Double> taxe=new HashMap<>();//dependency inversion intre map si hashmap, abstract concret
-    private String ceva;
+    //private String ceva;
 //    public Taxe(String ceva){
 //        this.ceva=ceva;
 //        taxe.put(this.ceva)
