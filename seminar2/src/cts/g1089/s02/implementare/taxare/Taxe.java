@@ -42,3 +42,7 @@ public static void adaugaTaxa(String taxa, double procent) throws ExceptieNumeTa
         }
     }
 }
+
+
+//alte 2 tehnici de taxe ex cercetator scutire de impozit
+//mapa de mape
