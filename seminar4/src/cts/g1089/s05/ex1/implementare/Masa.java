@@ -1,4 +1,4 @@
-package cts.g1089.s04.ex1.implementare;
+package cts.g1089.s05.ex1.implementare;
 
 public class Masa {
     private int id;

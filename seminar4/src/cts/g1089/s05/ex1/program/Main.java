@@ -1,8 +1,8 @@
-package cts.g1089.s04.ex1.program;
+package cts.g1089.s05.ex1.program;
 
-import cts.g1089.s04.ex1.implementare.Masa;
-import cts.g1089.s04.ex1.implementare.Ospatar;
-import cts.g1089.s04.ex1.implementare.Restaurant;
+import cts.g1089.s05.ex1.implementare.Masa;
+import cts.g1089.s05.ex1.implementare.Ospatar;
+import cts.g1089.s05.ex1.implementare.Restaurant;
 
 public class Main {
     public static void main(String[] args) {
