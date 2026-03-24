@@ -7,6 +7,7 @@ public abstract class AbstractCrocs implements Cloneable{
     protected int marime;
     protected String culoare;
     protected List<String> accesorii;
+    //
 
     public void setMarime(int marime) {
         this.marime = marime;
