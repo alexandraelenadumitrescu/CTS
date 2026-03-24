@@ -1,11 +1,11 @@
 package implementare;
 
-import clase.License;
+import clase.builder.Package;
+import clase.builder.PackageBuilder;
+import clase.singleton.License;
 
-import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.ThreadPoolExecutor;
 
 public class Main {
 
@@ -46,5 +46,13 @@ public class Main {
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
+        PackageBuilder builder=new PackageBuilder();
+        Package p1=builder.setCazare("cazare").build();
+        Package p2=builder.setCazare("cazare2").build();
+        Package p3=builder.setCazare("cazare3").build();
+        System.out.printf(p1.toString());
+        p1=p2;
+        System.out.printf(p1.toString());
+
     }
 }

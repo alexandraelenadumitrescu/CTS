@@ -1,6 +1,6 @@
-package clase;
+package clase.singleton;
 
-public class License implements AbstractTourismLicense{
+public class License implements AbstractTourismLicense {
     //implementare EAGER - THREAD SAFE
     private int licenseNumber=100;
     private int noChanges=0;
