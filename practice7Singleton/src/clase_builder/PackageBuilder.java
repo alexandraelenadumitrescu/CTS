@@ -1,4 +1,4 @@
-package clase.builder;
+package clase_builder;
 
 public class PackageBuilder implements IBuilder{
     private TipTransport tip;

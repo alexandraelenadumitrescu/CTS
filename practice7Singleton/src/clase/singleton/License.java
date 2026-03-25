@@ -13,7 +13,7 @@ public class License implements AbstractTourismLicense {
         return instance;
     }
 
-    public void setLicenseNumber(int number){
+    public synchronized void setLicenseNumber(int number){
         if(noChanges==0){
             this.licenseNumber=number;
             noChanges++;

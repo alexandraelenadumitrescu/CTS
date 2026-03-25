@@ -1,4 +1,4 @@
-package clase.builder;
+package clase_builder;
 
 public class Package implements AbstractHolidayPackage{
     private TipTransport tip;

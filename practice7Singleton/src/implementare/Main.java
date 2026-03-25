@@ -1,7 +1,7 @@
 package implementare;
 
-import clase.builder.Package;
-import clase.builder.PackageBuilder;
+import clase_builder.Package;
+import clase_builder.PackageBuilder;
 import clase.singleton.License;
 
 import java.util.concurrent.ExecutorService;
