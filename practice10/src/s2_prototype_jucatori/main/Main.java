@@ -23,6 +23,9 @@ public class Main {
         j.addMedicament("med 234");
         System.out.println(j.toString());
         System.out.println(j2.toString());
+        Jucator j3=j.copiaza();
+        Jucator j4=j.copiaza();
+        Jucator j5=j.copiaza();
 
     }
 }

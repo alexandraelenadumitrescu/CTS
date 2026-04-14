@@ -9,6 +9,7 @@ public class Jucator implements PrototypeJucator{
     private List<String> antrenamente;
 
     private Jucator() {
+        System.out.println("s a apelat ctr fara param");
     }
 
     public Jucator(TipJucator tipJucator, List<String> medicamente, List<String> antrenamente) {
@@ -16,6 +17,7 @@ public class Jucator implements PrototypeJucator{
 
         this.medicamente = medicamente;
         this.antrenamente = antrenamente;
+        System.out.println("s a apelat un ctr cu param consumator de timp");
     }
 
 

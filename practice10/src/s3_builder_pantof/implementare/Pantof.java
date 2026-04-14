@@ -60,8 +60,8 @@ public class Pantof {
                 throw new ExceptieMarime("marime gresita");
             }
             Pantof nou=new Pantof(marime,dimensiuneToc,tipPantof,materialBaza,materialeSecundare,mesaje);
-            nou.materialeSecundare=null;
-            nou.mesaje=null;
+            this.materialeSecundare=null;
+            this.mesaje=null;
             return nou;
         }
     }
