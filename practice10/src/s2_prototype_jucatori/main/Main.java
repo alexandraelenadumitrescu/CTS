@@ -24,6 +24,12 @@ public class Main {
         System.out.println(j.toString());
         System.out.println(j2.toString());
         Jucator j3=j.copiaza();
+        System.out.println(j.toString()+"jucatorul 1 inainte de modificari");
+        System.out.println(j3.toString()+"jucatorul 3 inainte de modificari");
+        j3.setTipJucator(TipJucator.FOTBAL);
+        j3.addAntrenament("12321");
+        System.out.println(j.toString()+"jucatorul 1 dupa modificari");
+        System.out.println(j3.toString()+"jucatorul 3 dupa modificari");
         Jucator j4=j.copiaza();
         Jucator j5=j.copiaza();
 

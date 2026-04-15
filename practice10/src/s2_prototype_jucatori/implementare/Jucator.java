@@ -46,5 +46,8 @@ public class Jucator implements PrototypeJucator{
         this.antrenamente.add(antrenament);
     }
 
+    public void setTipJucator(TipJucator tipJucator) {
+        this.tipJucator = tipJucator;
 
+    }
 }

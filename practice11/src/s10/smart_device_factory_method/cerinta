@@ -1,0 +1,10 @@
+3p. În aplicație trebuie să existe un obiect unic de tip EnergyConsumptionManager, care gestionează
+centralizat consumul energetic al tuturor dispozitivelor din locuință. Managerul trebuie să rețină
+un prag maxim de consum și istoricul operațiilor de activare și dezactivare pentru fiecare
+dispozitiv. Dacă prin activarea unui nou dispozitiv se depășește pragul maxim permis, sistemul
+trebuie să arunce o excepție.
+1.5p. Să se testeze soluția prin:
+• activarea a cel puțin 2 dispozitive;
+• afișarea consumului total;
+• încercarea activării unui dispozitiv care duce la depășirea pragului;
+• afișarea istoricului operațiilor
