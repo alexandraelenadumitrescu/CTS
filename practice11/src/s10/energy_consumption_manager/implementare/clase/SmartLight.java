@@ -8,7 +8,10 @@ private int powerConsumption;
 private boolean isActive;
 
 
-     SmartLight(int luminozitate, TipDevice tip, String deviceName, int powerConsumption, boolean isActive) {
+     SmartLight(int luminozitate, TipDevice tip, String deviceName, int powerConsumption, boolean isActive)  {
+         if(powerConsumption<0){
+             throw new ExceptieDeviceConsum("consumul device ului nu este valid");
+         }
         this.luminozitate = luminozitate;
         this.tip = tip;
         this.deviceName = deviceName;

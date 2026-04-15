@@ -16,6 +16,55 @@ public class Main {
         light.executeSpecificFunction();
         thermo.executeSpecificFunction();
 
+        try{
+            ISmartDevice lumina=factoryLight.creare(100,TipDevice.LIGHT,"nume",-20,false);
+
+        } catch (RuntimeException e) {
+            System.out.println(e.getMessage());
+        }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

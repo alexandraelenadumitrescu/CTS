@@ -4,7 +4,7 @@ public class GpsModule extends AbstractModule{
     protected  TipModul tip;
     protected int range;
 
-    protected GpsModule(TipModul tip, int range, String name,String description,float price) {
+    GpsModule(TipModul tip, int range, String name,String description,float price) {
         this.name=name;
         this.description=description;
         this.price=price;

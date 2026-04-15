@@ -4,7 +4,7 @@ public class NightVisionModule extends AbstractModule {
     protected TipModul tip;
     protected int nivel;
 
-    public NightVisionModule(TipModul tip, int nivel,String name,String description,float price) {
+     NightVisionModule(TipModul tip, int nivel,String name,String description,float price) {
         this.name=name;
         this.description=description;
         this.price=price;

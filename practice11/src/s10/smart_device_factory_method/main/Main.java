@@ -29,9 +29,13 @@ public class Main {
         try {
             manager.activateDevice(device3);
         } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-        System.out.println("merge si linia de dupa");
 
+                   }
+        System.out.println("merge si linia de dupa");
+        try {
+            manager.activateDevice(device3);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
     }
 }
