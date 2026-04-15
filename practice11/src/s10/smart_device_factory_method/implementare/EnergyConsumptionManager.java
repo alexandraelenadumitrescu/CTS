@@ -41,7 +41,7 @@ public class EnergyConsumptionManager implements IEnergyConsumptionManager{
 
     @Override
     public void deactivateDevice(ISmartDevice device) throws Exception {
-        if(connectedDevices.contains(device)){
+        if(!connectedDevices.contains(device)){
             throw new Exception("dispozitivul nu exista in lista de disp conectate");
         }else{
             connectedDevices.remove(device);

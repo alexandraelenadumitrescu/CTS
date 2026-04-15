@@ -26,7 +26,12 @@ public class Main {
         manager.displayOperationHistory();
         System.out.println(manager.getCurrentConsumption());
 
-
+        try {
+            manager.activateDevice(device3);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+        System.out.println("merge si linia de dupa");
 
     }
 }

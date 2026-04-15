@@ -1,10 +1,26 @@
 package s1.drone_connection_singleton.implementare;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class DroneConnection implements IDroneConnection{
 
     private List<String> connections;
+
+    private static DroneConnection instance=new DroneConnection();
+
+    public static DroneConnection getInstance(){
+        return instance;
+    }
+
+    public void getConnections() {
+        System.out.println(connections);
+    }
+
+    private DroneConnection() {
+        this.connections = new ArrayList<>();
+    }
+
 
     @Override
     public void connectUser(String userId) {
@@ -34,6 +50,6 @@ public class DroneConnection implements IDroneConnection{
 
     @Override
     public String getDedicatedChannel(String userId) {
-        return "";
+        return "canal";
     }
 }
