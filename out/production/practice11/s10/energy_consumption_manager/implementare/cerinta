@@ -1,0 +1,6 @@
+În locuință pot exista mai multe tipuri de dispozitive inteligente, precum SmartLight,
+SmartThermostat, SmartCamera sau SmartDoorLock. Toate dispozitivele trebuie să
+implementeze interfața ISmartDevice. Se cere implementarea unui mecanism de creare a
+dispozitivelor, astfel încât utilizatorul să nu depindă direct de clasele concrete. Se cunoaște
+ faptul
+că prezenta implementare trebuie să permită în timp adăugarea și de noi dispozitive inteligente.
