@@ -1,4 +1,4 @@
-package s4.singleton_linie_productie.implementare;
+package s5.singleton_linie_productie.implementare;
 
 public interface IProductionLineControl {
     void startLine(String employeeId) throws Exception;

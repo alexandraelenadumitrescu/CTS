@@ -1,4 +1,4 @@
-package s4.prototype_produs.implementare;
+package s5.prototype_produs.implementare;
 
 public class Item implements Cloneable,ProductionItem{
     private String name;

@@ -1,9 +1,7 @@
-package s4.singleton_linie_productie.main;
+package s5.singleton_linie_productie.main;
 
-import s4.singleton_linie_productie.implementare.LineControl;
+import s5.singleton_linie_productie.implementare.LineControl;
 
-import javax.sound.sampled.Line;
-import java.lang.classfile.attribute.LineNumberInfo;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
