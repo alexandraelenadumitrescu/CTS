@@ -1,0 +1,27 @@
+**Cerință:**
+
+Sistemul de management al unei librării online gestionează cărți. O carte de bază conține titlul și prețul. Deoarece cărțile pot fi personalizate diferit pentru fiecare client, se dorește un mecanism prin care să se poată adăuga dinamic servicii suplimentare precum:
+- **ambalaj cadou** — adaugă 5 RON
+- **livrare rapidă** — adaugă 15 RON
+- **dedicație personalizată** — adaugă 3 RON
+
+Mecanismul trebuie să permită adăugarea oricărei combinații de servicii fără a modifica clasa de bază și fără a crea subclase pentru fiecare combinație posibilă.
+
+---
+
+**1.5p. Să se testeze prin:**
+- o carte fără niciun serviciu
+- o carte cu exact 2 servicii
+- o carte cu toate serviciile disponibile
+- afișarea descrierii și prețului final pentru fiecare
+
+---
+
+Structura de care ai nevoie:
+- `ICarteService` — interfață
+- `Carte` — componenta de bază
+- `CarteDecorator` — abstract
+- cel puțin 3 decoratori concreți
+- `Main`
+
+Du-te!
