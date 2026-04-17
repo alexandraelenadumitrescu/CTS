@@ -31,4 +31,5 @@ public class DecoratorReducere extends AbstractDecorator implements IBon{
     public void adaugaItem(Double d) {
         bon.adaugaItem(d);
     }
+
 }

@@ -10,4 +10,11 @@ public class Persoana {
     public Persoana(String gen) {
         this.gen = gen;
     }
+
+    @Override
+    public String toString() {
+        return "Persoana{" +
+                "gen='" + gen + '\'' +
+                '}';
+    }
 }
