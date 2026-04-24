@@ -22,6 +22,6 @@ Structura de care ai nevoie:
 - `Carte` — componenta de bază
 - `CarteDecorator` — abstract
 - cel puțin 3 decoratori concreți
-- `Main`
+- `composite_meniu.main.Main`
 
 Du-te!
