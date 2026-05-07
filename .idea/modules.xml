@@ -4,7 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Curs2CTS/Curs2CTS.iml" filepath="$PROJECT_DIR$/Curs2CTS/Curs2CTS.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/cts.iml" filepath="$PROJECT_DIR$/.idea/cts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/curs11/curs11.iml" filepath="$PROJECT_DIR$/curs11/curs11.iml" />
       <module fileurl="file://$PROJECT_DIR$/curs9/curs9.iml" filepath="$PROJECT_DIR$/curs9/curs9.iml" />
+      <module fileurl="file://$PROJECT_DIR$/implementareCommandNotWeird/implementareCommandNotWeird.iml" filepath="$PROJECT_DIR$/implementareCommandNotWeird/implementareCommandNotWeird.iml" />
       <module fileurl="file://$PROJECT_DIR$/practice1/practice1.iml" filepath="$PROJECT_DIR$/practice1/practice1.iml" />
       <module fileurl="file://$PROJECT_DIR$/practice10/practice10.iml" filepath="$PROJECT_DIR$/practice10/practice10.iml" />
       <module fileurl="file://$PROJECT_DIR$/practice11/practice11.iml" filepath="$PROJECT_DIR$/practice11/practice11.iml" />
@@ -21,6 +23,7 @@
       <module fileurl="file://$PROJECT_DIR$/practice9/practice9.iml" filepath="$PROJECT_DIR$/practice9/practice9.iml" />
       <module fileurl="file://$PROJECT_DIR$/seminar1/seminar1.iml" filepath="$PROJECT_DIR$/seminar1/seminar1.iml" />
       <module fileurl="file://$PROJECT_DIR$/seminar10JOI/seminar10JOI.iml" filepath="$PROJECT_DIR$/seminar10JOI/seminar10JOI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seminar11/seminar11.iml" filepath="$PROJECT_DIR$/seminar11/seminar11.iml" />
       <module fileurl="file://$PROJECT_DIR$/seminar2/seminar2.iml" filepath="$PROJECT_DIR$/seminar2/seminar2.iml" />
       <module fileurl="file://$PROJECT_DIR$/seminar4/seminar4.iml" filepath="$PROJECT_DIR$/seminar4/seminar4.iml" />
       <module fileurl="file://$PROJECT_DIR$/seminar4JOI/seminar4JOI.iml" filepath="$PROJECT_DIR$/seminar4JOI/seminar4JOI.iml" />
