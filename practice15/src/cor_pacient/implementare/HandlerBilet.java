@@ -1,4 +1,4 @@
-package cor_credit.implementare;
+package cor_pacient.implementare;
 
 public class HandlerBilet implements IHandler{
     private IHandler nextHandler;

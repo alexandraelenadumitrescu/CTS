@@ -1,6 +1,6 @@
-package cor_credit.main;
+package cor_pacient.main;
 
-import cor_credit.implementare.*;
+import cor_pacient.implementare.*;
 
 //Cerința:
 //În cadrul unui spital, când un pacient sosește la urgențe,
