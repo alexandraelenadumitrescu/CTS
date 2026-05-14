@@ -1,6 +1,6 @@
 package adapter_cv.implementare;
 
-public class Adapter implements IAdapter,AbstractCandidatPlatforma{
+public class Adapter implements AbstractCandidatPlatforma{
     private ICandidatExtern candidatExtern;
 
     @Override
@@ -19,7 +19,7 @@ public class Adapter implements IAdapter,AbstractCandidatPlatforma{
     }
 
 
-    @Override
+
     public void proceseaza(ICandidatExtern candidatExtern) {
         System.out.println("se aplica adaptorul");
 
