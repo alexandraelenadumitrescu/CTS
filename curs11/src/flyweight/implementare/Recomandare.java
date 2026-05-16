@@ -9,7 +9,7 @@ public class Recomandare implements IRecomandare{
 
     @Override
     public void printare(Reteta reteta) {
-        System.out.println("se printeaza reteta "+ reteta.toString());
+        System.out.println("se printeaza reteta "+ reteta);
         System.out.println("***se recomanda: "+textRecomandare+" ***");
     }
 }

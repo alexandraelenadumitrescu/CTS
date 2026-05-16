@@ -2,7 +2,7 @@ package flyweight.implementare;
 
 import java.util.List;
 
-public class Reteta {
+public class Reteta implements IRecomandare{
     private int id;
     private String diagnostic;
     private List<String> medicamente;
@@ -32,5 +32,14 @@ public class Reteta {
 
     public List<String> getMedicamente() {
         return medicamente;
+    }
+
+    @Override
+    public void printare(Reteta reteta) {
+        System.out.println("Reteta{" +
+                "id=" + id +
+                ", diagnostic='" + diagnostic + '\'' +
+                ", medicamente=" + medicamente +
+                '}');
     }
 }
